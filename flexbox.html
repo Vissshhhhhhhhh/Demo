@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .l {
+        background: rgb(1, 1, 54);
+        /* width: 80%; */
+        margin: 0 auto;
+        color: white;
+        height: 500px;
+      }
+
+      .navbar,
+      .contents {
+        width: 75%;
+        /* background: rgb(1,1,54); */
+        margin: 0 auto;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: aliceblue;
+        justify-content: space-between;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar ul li {
+        cursor: pointer;
+        transition: color 0.3s;
+      }
+
+      .navbar li:hover {
+        color: bisque;
+      }
+
+      /* contents */
+
+      .contents {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .para {
+        font-size: 30px;
+      }
+      .para h1 {
+        font-weight: 500px;
+      }
+      .para > p {
+        font-size: 25px;
+      }
+      .img {
+        width: 45%;
+        height: 280px;
+        background: grey;
+      }
+      .img p {
+        font-size: 15px;
+      }
+
+      /* sec */
+
+      .sec {
+        margin-top: 60px;
+      }
+      .boxes {
+        display: flex;
+        /* margin:100px; */
+        justify-content: center;
+        margin-top: 60px;
+        gap: 70px;
+      }
+
+      .box {
+        margin-right: 10px;
+        text-align: center;
+        justify-items: center;
+      }
+
+      .in-box {
+        border: 2px solid rgb(21, 143, 236);
+        width: 80%;
+        height: 100px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="l">
+      <div class="navbar">
+        <h1>Header Logo</h1>
+        <ul>
+          <l1>Header link one</l1>
+          <l1>Header link two</l1>
+          <l1>Header link three</l1>
+        </ul>
+      </div>
+
+      <div class="contents">
+        <div class="para">
+          <h1>This Website is <br />awesome</h1>
+          <p>
+            This is a wholesome idea I did this and ashcjasad<br />
+            kjbsdxscliusgdui lbgvvsdcsjdc bvusibdv iidjchh sis c<br />
+            iohoasduich8dhc uisdhchuisshbh ch uhc
+          </p>
+          <button
+            class="sign-in"
+            style="
+              border: 1px solid rgb(65, 126, 211);
+              background: rgb(65, 126, 211);
+              color: white;
+              margin-top: 10px;
+              padding: 12px 24px;
+              font-size: 17px;
+            "
+          >
+            Sign In
+          </button>
+        </div>
+        <div class="img">
+          <p><center>This is a placeholder for img</center></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h1 style="text-align: center">Some Random Information</h1>
+
+      <div class="boxes">
+        <div class="box">
+          <div class="in-box"></div>
+          <p>
+            this is some subtext <br />
+            under ans illustration <br />
+            or image
+          </p>
+        </div>
+        <div class="box">
+          <div class="in-box"></div>
+          <p>
+            this is some subtext <br />
+            under ans illustration <br />
+            or image
+          </p>
+        </div>
+        <div class="box">
+          <div class="in-box"></div>
+          <p>
+            this is some subtext <br />
+            under ans illustration <br />
+            or image
+          </p>
+        </div>
+        <div class="box">
+          <div class="in-box"></div>
+          <p>
+            this is some subtext <br />
+            under ans illustration <br />
+            or image
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="seg3" style="text-align: center; margin: 100px;background: grey; height: 50%;">
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+        <p>sample-test</p>
+    </div>
+
+    <div class="seg4">
+        <div class="pogo" style="width: 50%; height: 100px;text-align: center;background: rgb(6, 138, 182); margin: auto;padding: 20px;font-size: 50px;border-radius: 10px; margin-bottom: 80px;">
+            sentence
+        </div>
+        <div class="footer" style="text-align: center;background: #000; color: aliceblue;height: 50px;"><p style="align-items: center;">Copyright @The Odin Project 2025.</p></div>
+    </div>
+  </body>
+</html>
