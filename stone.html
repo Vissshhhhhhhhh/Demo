@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      class="body"
+      style="
+        border-radius: 10px;
+        border: 3px solid black;
+        margin: 100px auto;
+        width: 50%;
+        height: 50vh;
+        text-align: center;
+      "
+    >
+      <h1 class="title">Stone Paper Scissor</h1>
+      <div class="buttons" style="margin: 100px">
+        <button
+          id="stone"
+          style="
+            border: 3px solid black;
+            background: pink;
+            padding: 70px;
+            font-size: 20px;
+          "
+          onclick="game('stone')"
+        >
+          Stone
+        </button>
+        <button
+          id="scissor"
+          onclick="game('scissor')"
+          style="
+            border: 3px solid black;
+            background: rgb(97, 189, 232);
+            padding: 70px;
+            font-size: 20px;
+          "
+        >
+          Scissor
+        </button>
+        <button
+          id="paper"
+          onclick="game('paper')"
+          style="
+            border: 3px solid black;
+            background: rgb(215, 215, 25);
+            padding: 70px;
+            font-size: 20px;
+          "
+        >
+          Paper
+        </button>
+      </div>
+      <p id="result" style="font-size: 25px; margin-top: -50px"></p>
+    </div>
+
+    <script>
+      const choices = ["stone", "paper", "scissor"];
+      const winOrlose = document.getElementById("result");
+      let a = "stone";
+      let b = "paper";
+      let c = "scissor";
+      function game(userchoice) {
+        const comp = choices[Math.floor(Math.random() * 3)];
+        let result = output(userchoice, comp);
+        winOrlose.textContent =
+          "UserChoice : '" +
+          userchoice +
+          "'' " +
+          "Computer Choice:  '" +
+          comp +
+          "' " +
+          result;
+      }
+
+      let output = (u, co) => {
+        if ((u == a && co == b) || (u == b && co == c) || (u == c && co == a)) {
+          return "Computer win!";
+        } else {
+          return "You Win!";
+        }
+      };
+    </script>
+  </body>
+</html>
