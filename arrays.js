@@ -10,10 +10,10 @@
       console.log("C array filtered from A : "+c); // Filter
 
       let d = a.reduce((acc , cur) => acc * cur, 1);
-      console.log("D value Reduced from A : "+d); // Reduce
+      console.log("D value Reduced from A : "+d); // Reduce                                                                           
 
       let [A,B] = a;
-      console.log("Destructuring : "+ (A + B)); // Destructuring
+      console.log("Destructuring : "+ (A + B)); // Destructuring  
 
       const arr = [1, 2, 3, 4, 5];
       const [first, second, ...rest] = arr;
@@ -39,3 +39,10 @@
 
       let s = "My name is Viswa"
       console.log(s);
+
+      console.log("first");
+      Promise.resolve().then(console.log("from promises"));
+      setTimeout(()=>{
+        console.log("Inside timeout");
+      },2000);
+      console.log("Last");
