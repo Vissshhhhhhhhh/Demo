@@ -1,0 +1,19 @@
+.navbar{
+    color: #fff;
+
+    background: #7398c5;
+    display: flex;
+}
+
+.navbar ul li{
+    text-decoration: none;
+    display: inline;
+    /* gap: 20px; */
+    cursor: pointer;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+.navbar ul li:hover{
+    color: rgb(84, 82, 82);
+
+}

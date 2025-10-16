@@ -1,14 +1,23 @@
+  import React from "react"
+  import './Navbar.css'
+  export default function Navbar() {
+
   
-function Navbar() {
   return (
-<>
-      <nav>
-        <h2>My Gallery</h2>
-      </nav>
+    <>
+        <div className="navbar">
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Project</li>
+              <li>Experience</li>
+              <li>Contact</li>
+            </ul>
+        </div>
+
     </>
   )
 }
 
-export default Navbar
 
 
