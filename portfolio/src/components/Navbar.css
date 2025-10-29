@@ -1,0 +1,57 @@
+/* ✅ Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ Background moved here instead of universal selector */
+body {
+  background-color: #0b1120;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ✅ Modern navbar styling */
+.navbar {
+  width: 80%;
+  margin: 25px auto;
+  padding: 12px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05); /* subtle transparency */
+  backdrop-filter: blur(10px); /* ✅ glassmorphism effect */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ Improved logo handling */
+.navbar-logo img {
+  width: 50px;
+  height: auto;
+  cursor: pointer;  
+  margin-left: 50px;
+}
+
+/* ✅ Flex menu with gap */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+/* ✅ Clean, modern links */
+.navbar-menu li a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* ✅ Hover effect */
+.navbar-menu li a:hover {
+  color: #54c4c4;
+  transform: translateY(-2px);
+}
+
