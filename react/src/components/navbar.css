@@ -1,0 +1,21 @@
+#navmain{
+    background-color: rgb(216, 216, 237);
+    display: flex;
+    gap: 20rem;
+    padding: 13px 13px;
+}
+#buttons{
+    transition: background-color 0.25s;
+    color: rgb(29, 176, 234);
+    border: 5px 5px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 20cap;
+}
+#buttons:hover{
+    background-color: blue;
+    color: azure;
+    text-align: center;
+
+}
