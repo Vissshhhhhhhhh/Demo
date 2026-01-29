@@ -1,7 +1,7 @@
 #border{
    border: 3cap; 
-   display: flex;
    text-align: center;
+   display: flex;
    border-color: rgb(20, 19, 26);
    border-style: groove;
    padding: 5% ;

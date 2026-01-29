@@ -15,9 +15,9 @@
     border: 5px 5px;
     text-decoration: none;
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 20cap;
-    font-family:  sans-serif;
+     font-family:  sans-serif;
 }
 #buttons:hover{
     background-color: blue;
