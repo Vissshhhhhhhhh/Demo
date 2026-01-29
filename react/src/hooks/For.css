@@ -1,4 +1,17 @@
 #border{
    border: 3cap; 
+   display: flex;
    text-align: center;
+   border-color: rgb(20, 19, 26);
+   border-style: groove;
+   padding: 5% ;
+   margin: 10% 20% 10% 20% ;
+   justify-content: center;
+   border-radius: 0%;
+   border-bottom-left-radius: 70cap;
+   border-top-right-radius: 70cap;
+}
+#sp{
+   display: block;
+   padding: 2% 2%;
 }

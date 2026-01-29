@@ -1,22 +1,28 @@
 import { Link, useParams } from "react-router-dom"
-import React from "react"
+import React, { useState ,useEffect} from "react"
+import './productdetails.css'
 export default function ProductDetails(){
-    const products=[
-        {id:1,name:"laptop",price:"30000",description:"lorem is path of way lanunch"},
-        {id:2,name:"lapto",price:"8000",description:"lorem is path of way lanunch"},
-        {id:3,name:"lapt",price:"9000",description:"lorem is path of way lanunch"},
-        {id:4,name:"lap",price:"3900",description:"lorem is path of way lanunch"},
-        {id:5,name:"la",price:"12300",description:"lorem is path of way lanunch"}
-    ]
+    const[products,setProduct]=useState({})
     const {id}=useParams()
-    const product=products.find((p)=>p.id===Number(id))
+
+     useEffect(()=>{
+        fetch(`https://fakestoreapi.com/products/${id}`)
+                .then(response => response.json())
+                .then(data =>setProduct(data));
+        },[])
+    
     return(
         <>
         <div>
         <h1>Products</h1>
-                <h3>{product.name}</h3>
-                <h4>{product.price}</h4>
-                <h4>{product.description}</h4>
+           <div id="dir">
+                <h3>{products.title}</h3>
+                <h4>{products.price}</h4>
+                <h4>{products.description}</h4>
+            </div>
+            <div id="dis "><img src={products.image}/></div>
+
+            
         </div>
         </>
     )

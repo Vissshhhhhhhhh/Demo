@@ -3,6 +3,11 @@
     display: flex;
     gap: 20rem;
     padding: 13px 13px;
+    margin: 0px 50px;
+    border-radius: 10cap;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 82rem;
 }
 #buttons{
     transition: background-color 0.25s;
@@ -10,8 +15,9 @@
     border: 5px 5px;
     text-decoration: none;
     text-align: center;
-    padding: 5px 5px;
+    padding: 10px 15px;
     border-radius: 20cap;
+    font-family:  sans-serif;
 }
 #buttons:hover{
     background-color: blue;

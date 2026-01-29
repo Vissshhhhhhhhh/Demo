@@ -1,8 +1,13 @@
 import React from 'react'
+import State from '../hooks/State'
 
 function Home ()  {
   return (
-    <div>Home</div>
+   <>
+   <State/>
+   </>
+  
+
   )
 }
 export default Home

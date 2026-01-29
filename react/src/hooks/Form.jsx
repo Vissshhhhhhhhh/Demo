@@ -23,19 +23,19 @@ export default function Form(){
     return(
         <>
         <div id="border">
-        <form onSubmit={handlesubmit}>
-          <label htmlFor="name">Name:</label>
+        <form onSubmit={handlesubmit} id="form">
+            <div id="sp"> <label htmlFor="name">Name:</label>
           <input name="name" type="text" value={form.name}
-          onChange={handlechange}/>
-          <label htmlFor="email">Email:</label>
+          onChange={handlechange}/></div>
+            <div id="sp">  <label htmlFor="email">Email:</label>
           <input name="email" type="text" value={form.email}
-          onChange={handlechange}/>
-          <label htmlFor="age">Age:</label>
+          onChange={handlechange}/></div>
+            <div id="sp"><label htmlFor="age">Age:</label>
           <input name="age" type="Number" value={form.age}
-          onChange={handlechange}/>
-          <label htmlFor="deparment">Department:</label>
+          onChange={handlechange}/></div>
+            <div id="sp"> <label htmlFor="deparment">Department:</label>
           <input name="department" type="text" value={form.department}
-          onChange={handlechange}/>
+          onChange={handlechange}/></div>
           <button  type="submit">submit</button>
         </form>
         </div>

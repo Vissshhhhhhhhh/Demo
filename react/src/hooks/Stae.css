@@ -1,7 +1,21 @@
 #btn{
-  background-color: brown;
+  background-color: rgb(21, 19, 155);
+  color: aliceblue;
+  font-size: medium;
   padding: 10px 15px;
-  display: block-inline;
   font-family: Verdana;
-  font-size: x-large;
+  transition: background-color 0.25s;
+
+}
+#btn:hover{
+  background-color: rgb(31, 84, 120);
+}
+#mainbtn{
+  margin-left: 40%;
+  display: flex;
+  gap: 5rem;
+}
+#co{
+  text-align: center;
+  font-size: 140px;
 }
